@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=10">
+    <link rel="stylesheet" href="res/index.css">
+    <title>Picnic Planner</title>
+</head>
+<body>
+    <div id="welcome">
+        <p id="greet"><b>Hi astronout!</b></p>
+
+        <p id="quote"><b>"</b> Life is always about learning and adventures are the best way to do that so don't just dream, dare to live the life you've always wanted. Travel, your money will return time won't. The goal of life is to die with memories, not with dreams. <b>"</b></p>
+    </div>
+
+    <!-- <p>A common ground where you can register to picnic plans also announce your own</p>
+    <p>Once the travel bug bites there is no known antidote, and I know that I shall be happily infected until the end of my life you know what, this is what I love about traveling so are you ready to get bitten? If you are hit the button below!</p> -->
+
+    <div class="btn-align">
+        <button onclick="show()" id="btn">Let's Trevel</button>
+    </div>
+
+    <!-- Login Form -->
+    <div class="container">
+        <form action="">
+            <h1>Login</h1>
+
+            <p id="signup">Don't have an account? <input id="signup-btn" type="button" onclick="signup()" value="Signup"></p>
+            <hr>
+
+            <div class="grid">
+                <label for="email">Email</label>
+            </div>
+            <input type="email" name="email" required>
+        
+            <div class="grid">
+                <label for="psw">Password</label>
+                <input id="reset-psw" type="button" value="Forgot Password!" onclick="reset_psw()">
+            </div>
+            <input type="password" name="psw" required>
+        
+            <button type="submit" onclick="submit()" class="sub-btn">Login</button>
+            <button type="button" class="cancel-btn" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <script src="res/index.js"></script>
+
+</body>
+</html>
