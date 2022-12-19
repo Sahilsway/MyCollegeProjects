@@ -1,0 +1,51 @@
+<!-- set_pass-form 
+        Take new password from the user
+        if the email and phone already exist in DataBase
+            redirect to login-form
+        if doesn't exist
+            redirect to set_user_data-form -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>World Tour - login</title>
+    </head>
+    <body>
+        <div id="login-form" class="form-container">
+            <form action="">
+                <h1 id="f-head">Set your password</h1>
+
+                <p id="err-msg">Please enter correct details!</p>
+
+                <div>
+                    <input
+                        id="user-pass"
+                        class="input-field"
+                        type="password"
+                        placeholder="Type a secure password"
+                    />
+                </div>
+
+                <div>
+                    <input
+                        id="user-pass_con"
+                        class="input-field"
+                        type="password"
+                        placeholder="Retype your password"
+                    />
+                </div>
+
+                <div style="margin-top: 50px;" class="align-btn">
+                    <button id="save_pass-btn">Save</button>
+                    <button id="cancel-btn">Cencel</button>
+                </div>
+            </form>
+        </div>
+
+        <script src="js/set-pass.js"></script>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!-- set_user_data-form
+        Take user data inputs
+        Redirect to login-form -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>World Tour - login</title>
+    </head>
+    <body>
+        <div id="login-form" class="form-container">
+            <form action="">
+                <h1 id="f-head">Set your account details</h1>
+
+                <p id="err-msg">Please enter correct details!</p>
+
+                <!-- Set this 2 fields as parmanent and in left right grid form -->
+                <div class="grid">
+                    <p>usermail@gmail.com</p>
+                    <p>9999999999</p>
+                </div>
+                
+                <div>
+                    <input id="user-fname" class="input-field" type="text" placeholder="First name" />
+                </div>
+
+                <div>
+                    <input id="user-sname" class="input-field" type="text" placeholder="Surname" />
+                </div>
+
+                <div>
+                    <label for="institute">You are a (optional)</label>
+                    <input id="school" class="" type="radio" name="institute" />
+                    <input id="college" class="" type="radio" name="institute" />
+                    <div>
+                        <!-- If school
+                        Institute name
+                        Class -->
+                    </div>
+                    
+                    <div>
+                        <!-- If college
+                        Institute name
+                        Department -->
+                    </div>
+                </div>
+
+                <div class="align-btn">
+                    <button id="save_user_data-btn">Save</button>
+                    <button id="cancel-btn">Cencel</button>
+                </div>
+            </form>
+        </div>
+
+        <script src="js/_verify.js"></script>
+    </body>
+</html>
