@@ -12,6 +12,10 @@ body {
     box-sizing: border-box;
 }
 
+.index-container {
+    opacity: 100%;
+}
+
 #welcome {
     margin: 150px 200px 0px 200px;
 }
@@ -44,7 +48,7 @@ body {
 }
 
 /* Login form - popup and hidden by default */
-.container {
+.login-container {
     font-family: Arial, Helvetica, sans-serif;
     display: none;
     position: absolute;
@@ -59,7 +63,7 @@ body {
     box-shadow: 5px 5px 5px whitesmoke;
 }
 
-form h1 {
+#title {
     padding: 0;
     margin: 0;
     text-align: center;
@@ -93,7 +97,6 @@ label{
     padding: 0;
     margin-top: 20px;
     margin-bottom: 10px;
-    /* box-shadow: ; */
 }
 
 #reset-psw {
@@ -108,7 +111,7 @@ label{
 }
 
 /* Full-width input fields */
-.container input[type=email], .container input[type=password] {
+.login-container input[type=email], .login-container input[type=password] {
     box-sizing: border-box;
     width: 100%;
     font-size: 15px;
@@ -119,13 +122,13 @@ label{
 }
 
 /* When the inputs get focus, do something */
-.container input[type=email]:focus, .container input[type=password]:focus {
+.login-container input[type=email]:focus, .login-container input[type=password]:focus {
     border-color: rgb(84, 105, 212);
     outline: none;
 }
 
 /* Set a style for the submit/login button */
-.container .sub-btn {
+.login-container .sub-btn {
     background-color: rgb(84, 105, 212);
     color: white;
     font-size: 20px;
@@ -138,7 +141,7 @@ label{
 }
 
 /* Add a red background color to the cancel button */
-.container .cancel-btn {
+.login-container .cancel-btn {
     background-color: rgb(255, 30, 0);
     color: white;
     font-size: 20px;
@@ -152,6 +155,6 @@ label{
 }
 
 /* Add some hover effects to buttons */
-.container .sub-btn:hover, .cancel-btn:hover {
+.login-container .sub-btn:hover, .cancel-btn:hover {
     /* background-color: rgb(144, 209, 255); */
 }

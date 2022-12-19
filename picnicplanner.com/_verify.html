@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="res/style.css">
+    <title>Picnic Planner</title>
+</head>
+<body>
+    <!-- Get OTP -->
+    <div id="getotp-form" class="form-container">
+        <form action="">
+            <h1 id="title">Verify your email id and phone number</h1>
+            <hr/>
+            
+            <div>
+                <div class="grid">
+                    <label for="mail">Email</label>
+                </div>
+                <input class="user-email" type="email" name="mail" required />
+            </div>
+
+            <div>
+                <div class="grid">
+                    <label for="phone">Phone no</label>
+                </div>
+                <input class="user-phone" type="number" name="phone" required />
+            </div>
+            
+            <div class="btns">
+                <button class="getotp-btn" onclick="getotp()" >GET OTP</button>
+                <!-- Convert cencel to <a> tag but make it look like button and when clicked redirect to index page -->
+                <button type="button" class="cancel-btn" onclick="close()"><a href="index.html">Cencel</a></button>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- VERIFY OTP -->
+    <div id="verify-otp-form" class="form-container">
+        <form action="">
+            <h1 id="title">Verify OTP</h1>
+            <hr/>
+            
+            <div>
+                <div class="grid">
+                    <label for="mail-otp">OTP send to your email</label>
+                </div>
+                <input class="email-otp" type="text" name="mail-otp" required />
+            </div>
+
+            <div>
+                <div class="grid">
+                    <label for="phone-otp">OTP send to your phone</label>
+                </div>
+                <input class="phone-otp" type="text" name="phone-otp" required />
+            </div>
+            
+            <div class="btns">
+                <button class="verify-otp-btn" onclick="verifyotp()" >VERIFY OTP</button>
+                <!-- Convert cencel to <a> tag but make it look like button and when clicked redirect to index page -->
+                <button type="button" class="cancel-btn" onclick="close()">
+                    Cencel
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="res/index.js"></script>
+
+</body>
+</html>

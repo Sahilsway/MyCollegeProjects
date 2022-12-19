@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="res/signup.css" />
+        <title>Signup</title>
+    </head>
+    <body>
+
+        <!-- Signup Form -->
+        <div id="signup-container" class="container">
+            <form action="">
+                <h1 id="title">Signup</h1>
+
+                <!-- <p id="signin">Already have an account? <a id="signin-btn" href="index.html">Signin</a></p> -->
+                <hr/>
+
+                <div>
+                    <p class="user-email">Example@gmail.com</p>
+                    <p class="user-ph-no">99XXXXXXXX</p>
+                </div>
+                
+                <div>
+                    <div class="grid">
+                        <label for="fname">First name</label>
+                    </div>
+                    <input type="text" name="fname" required />
+                    <div class="grid">
+                        <label for="lname">Last name</label>
+                    </div>
+                    <input type="text" name="lname" required />
+                </div>
+
+                <div>
+                    <div class="grid">
+                        <label for="institute">Institute</label>
+                    </div>
+                    <label for="school">School</label>
+                    <input id="school" type="radio" name="chose" onclick="school()" required />
+                    <label for="college">College</label>
+                    <input id="college" type="radio" name="chose" onclick="college()" required />
+                    <span class="select">
+                        <select id="select-school" name="institute" class="institute-name">
+                            <option value="">--Select your school--</option>
+                            <option value="">Euclid gorup of insitution</option>
+                            <option value="">Not found</option>
+                        </select>
+                        <select id="select-college" name="institute" class="institute-name">
+                            <option value="">--Select your college--</option>
+                            <option value="">Rangia College</option>
+                            <option value="">Pub kamrup college</option>
+                            <option value="">Not found</option>
+                        </select>
+                    </span>
+                    <input id="institute-tf" type="text" name="institute" placeholder="Name of your institute"/>
+                </div>
+
+                <div>
+                    <div class="grid">
+                        <label for="psw">Password</label>
+                    </div>
+                    <input type="password" name="psw" required />
+                </div>
+
+                <div>
+                    <button type="submit" onclick="submit()" class="sub-btn">
+                        Signup
+                    </button>
+                    <button type="button" class="cancel-btn" onclick="closeForm()">
+                        Cencel
+                    </button>
+                </div>
+
+            </form>
+        </div>
+        <script src="res/signup.js"></script>
+    </body>
+</html>
+
+<!--    If(school) Class, Section(optional)
+        If(college) Department, Semester -->
