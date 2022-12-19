@@ -1,20 +1,18 @@
 function show() {
-    document.querySelector(".container").style.display = "block"
+    document.getElementsByClassName("login-container").style.display = "block"
+    document.getElementsByClassName("index-container").style.opacity = '60%'
 }
 
 function closeForm() {
-    document.querySelector(".container").style.display = "none"
+    document.getElementsByClassName("login-container").style.display = none
 }
 
-function signup() {
-    // Change Login title to Signup
-    // Don't have account? Signup --> Already have an account? Signin
-    // Name, Email, Phone_no, Gender, Address, Institute
-        //If(school) --> Class, Section(optional)
-        //If(college) --> Department, Semester
-    // Login button to Signup button
+// JavaScript for forms
+
+function getotp() {
+    // Send otp to the user provided email and phone number
+
+    document.getElementById("getotp-form").style.display = none
+    document.getElementById("verify-otp-form").style.display = none
 }
 
-function reset_psw() {
-    // Email, OTP, Capcha
-}

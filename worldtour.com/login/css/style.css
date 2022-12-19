@@ -1,0 +1,325 @@
+
+body {
+    background: linear-gradient(180deg, #5f0391 20%, #454bff 50%, #8effae 100%);
+    padding: 0;
+    background-attachment: fixed;
+}
+
+/* Style form container */
+.form-container {
+    font-family: Georgia, 'Times New Roman', 'Trebuchet MS', 'Lucida Sans Unicode';
+    margin: 8% 20%;
+    border-radius: 1vw;
+}
+
+/* Form title style */
+#f-head {
+    color: black;
+    font-size: 2.9vw;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+/* Signup link */
+.signup-msg {
+    text-align: center;
+    font-size: 1.3vw;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+/* Error message */
+#err-msg {
+    /* display: none; */
+    font-size: 1.2vw;
+    text-align: center;
+    color: red;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+/* Input field style */
+.input-field {
+    box-sizing: border-box;
+    width: 100%;
+    letter-spacing: 0.1vw;
+    font-size: 1.2vw;
+    padding: 1.5vh 2vw;
+    margin-bottom: 20px;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 10px;
+    background-color: rgb(226, 252, 255);
+    -moz-appearance: textfield;
+}
+
+/* Remove arrow button from number input field */
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/* Change password type                         It isn't working though */
+.input-field[type=password] {
+    -webkit-text-security: square;
+}
+
+.input-field:focus {
+    border: none;
+    outline: none;
+    background-color: white;
+    box-shadow:  1px 1px 6px 2px rgb(143, 162, 168);
+}
+
+/* Forgot password button style */
+#reset-pass {
+    font-size: 1.3vw;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0;
+    margin: 30px 20px 20px 0;
+    float: right;
+}
+
+/* Login button style */
+#login-btn {
+    background: linear-gradient(20deg, #5f0391 10%, #454bff 50%, #8effae 100%);
+    color: white;
+    font-size: 1.4vw;
+    padding: 1.3vh 0;
+    margin: 0 0 2vh 0;
+    border: 2px solid white;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 1vw;
+}
+
+/* Verify ID button style */
+#verify_id-btn {
+    background: linear-gradient(20deg, #5f0391 10%, #454bff 50%, #8effae 100%);
+    color: white;
+    font-size: 1.4vw;
+    padding: 1.3vh 0;
+    margin: 0 0 2vh 0;
+    border: 2px solid white;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 1vw;
+}
+
+/* Verify OTP button style */
+#verify_otp-btn {
+    background: linear-gradient(20deg, #5f0391 10%, #454bff 50%, #8effae 100%);
+    color: white;
+    font-size: 1.4vw;
+    padding: 1.3vh 0;
+    margin: 0 0 2vh 0;
+    border: 2px solid white;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 1vw;
+}
+
+/* Save password button style */
+#save_pass-btn {
+    background: linear-gradient(20deg, #5f0391 10%, #454bff 50%, #8effae 100%);
+    color: white;
+    font-size: 1.4vw;
+    padding: 1.3vh 0;
+    margin: 0 0 2vh 0;
+    border: 2px solid white;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 1vw;
+}
+
+/* Save user data button style */
+#save_user_data-btn {
+    background: linear-gradient(20deg, #5f0391 10%, #454bff 50%, #8effae 100%);
+    color: white;
+    font-size: 1.4vw;
+    padding: 1.3vh 0;
+    margin: 0 0 2vh 0;
+    border: 2px solid white;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 1vw;
+}
+
+/* Style cencel button */
+#cancel-btn {
+    background: linear-gradient(180deg, #af1b1b 40%, #e7af85 80%, #f7e1ad 100%);
+    color: white;
+    font-size: 1.4vw;
+    padding: 1.3vh 0;
+    margin: 0 0 2vh 0;
+    border: 2px solid white;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 1vw;
+}
+
+@media screen and (max-width: 800px) {
+    .form-container {
+        margin: 15% 16%;
+    }
+
+    #f-head {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .signup-msg {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    #err-msg {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .input-field {
+        font-size: 14px;
+        padding: 5px 10px;
+        margin-bottom: 25px;
+        border-radius: 5px;
+    }
+
+    #reset-pass {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    #login-btn {
+        font-size: 14px;
+        padding: 1vh 0;
+        margin-bottom: 30px;
+        border-radius: 20px;
+    }
+
+    #verify_id-btn {
+        font-size: 14px;
+        padding: 1vh 0;
+        margin-bottom: 30px;
+        border-radius: 20px;
+    }
+
+    #verify_otp-btn {
+        font-size: 14px;
+        padding: 1vh 0;
+        margin-bottom: 30px;
+        border-radius: 20px;
+    }
+
+    #save_pass-btn {
+        font-size: 14px;
+        padding: 1vh 0;
+        margin-bottom: 30px;
+        border-radius: 20px;
+    }
+
+    #save_user_data-btn {
+        font-size: 14px;
+        padding: 1vh 0;
+        margin-bottom: 30px;
+        border-radius: 20px;
+    }
+
+    #cancel-btn {
+        font-size: 14px;
+        padding: 1vh 0;
+        margin-bottom: 30px;
+        border-radius: 20px;
+    } 
+}
+
+@media screen and (max-width: 450px) {
+    .form-container {
+        margin: 50% 10%;
+    }
+
+    #f-head {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .signup-msg {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    #err-msg {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .input-field {
+        font-size: 14px;
+        padding: 5px 10px;
+        margin-bottom: 25px;
+        border-radius: 5px;
+    }
+
+    #reset-pass {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    #login-btn {
+        font-size: 14px;
+        padding: 1vh 0;
+        margin-bottom: 30px;
+        border-radius: 20px;
+    }
+
+    #verify_id-btn {
+        font-size: 14px;
+        padding: 1vh 0;
+        margin-bottom: 30px;
+        border-radius: 20px;
+    }
+
+    #verify_otp-btn {
+        font-size: 14px;
+        padding: 1vh 0;
+        margin-bottom: 30px;
+        border-radius: 20px;
+    }
+
+    #save_pass-btn {
+        font-size: 14px;
+        padding: 1vh 0;
+        margin-bottom: 30px;
+        border-radius: 20px;
+    }
+
+    #save_user_data-btn {
+        font-size: 14px;
+        padding: 1vh 0;
+        margin-bottom: 30px;
+        border-radius: 20px;
+    }
+
+    #cancel-btn {
+        font-size: 14px;
+        padding: 1vh 0;
+        margin-bottom: 30px;
+        border-radius: 20px;
+    } 
+
+}
+
+@media screen and (max-width: 300px) {
+    .form-container {
+        margin: 35% 10%;
+    }
+
+    .input-field {
+        font-size: 12px;
+        padding: 5px 10px;
+        margin-bottom: 25px;
+        border-radius: 5px;
+    }
+}
