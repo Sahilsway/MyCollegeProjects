@@ -63,7 +63,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-image: url("/trevelever.com/login/assets/imgs/login-bg.jpg");
+    background-image: url("../imgs/login-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -82,10 +82,19 @@ form p, form a {
     border: 3px solid var(--mikado-yellow);
     border-radius: var(--radius-10);
 }
-
-/*---------------*\
-    Signup Form
-\*---------------*/
+form {
+    position: absolute;
+    top: 50px;
+    padding: 20px;
+    margin: 0px 20px 0px 60px;
+    width: 30%;
+    background: var(--white-1);
+    height: 600px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow:  1px 1px 6px 1px var(--light-gray);
+    transition: var(--transition-3);
+}
 .col {
     float: left;
     width: 80%;
@@ -102,19 +111,6 @@ form p, form a {
     grid-template-columns: 50% 50%;
     padding: 0;
     margin: 0;
-}
-#signup-form {
-    position: absolute;
-    top: 50px;
-    padding: 20px;
-    margin: 0px 20px 0px 60px;
-    width: 30%;
-    background: var(--white-1);
-    height: 600px;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow:  1px 1px 6px 1px var(--light-gray);
-    transition: var(--transition-3);
 }
 #f-head {
     color: var(--viridian-green);
@@ -159,17 +155,6 @@ input::-webkit-inner-spin-button {
     padding: 0;
     margin-top: 50px;
 }
-#sub-sign-btn {
-    font-size: var(--fs-7);
-    padding: 8px 25px;
-    margin-right: 5px;
-    margin-bottom: var(--sml-margin);
-    background-color: var(--viridian-green);
-    border: none;
-    border-radius: var(--radius-6);
-    color: var(--white-1);
-    cursor: pointer;
-}
 .cencel-btn {
     color: var(--viridian-green);
     font-size: var(--fs-8);
@@ -182,7 +167,7 @@ input::-webkit-inner-spin-button {
     border-radius: var(--radius-6);
     cursor: pointer;
 }
-#signup-dir-msg {
+#dir-msg {
     padding: 0;
     margin-top: 40px;
 }
@@ -211,6 +196,21 @@ input::-webkit-inner-spin-button {
     line-height: 35px;
 }
 
+/*---------------*\
+    Signup Form
+\*---------------*/
+#sub-sign-btn {
+    font-size: var(--fs-7);
+    padding: 8px 25px;
+    margin-right: 5px;
+    margin-bottom: var(--sml-margin);
+    background-color: var(--viridian-green);
+    border: none;
+    border-radius: var(--radius-6);
+    color: var(--white-1);
+    cursor: pointer;
+}
+
 /*-------------------*\
     Verify OTP Form
 \*-------------------*/
@@ -233,54 +233,21 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
-/* __________Set password form elements__________ */
-
-/* Save password button style */
-#save_pass-btn {
+/*------------------------------*\
+    Set password form elements
+\*------------------------------*/
+#set-pass-btn {
+    font-size: var(--fs-7);
+    padding: 8px 25px;
+    margin-right: 5px;
+    margin-bottom: var(--sml-margin);
+    background-color: var(--viridian-green);
+    border: none;
+    border-radius: var(--radius-6);
+    color: var(--white-1);
+    cursor: pointer;
 }
 
-/* __________Set user data form elements__________ */
-/* User email ID and phone style */
-.ph_mail {
-}
-.ph_mail p {
-}
-
-/* Style labels */
-.set-user-data_label-el {
-}
-
-/* Style input fields */
-#user_details-form .input-field {
-}
-
-/* Selector for profession */
-#option-el {
-}
-.option {
-}
-.option:focus {
-    /* box-shadow: ; -------- */
-}
-
-/* Student's input fields */
-#student-el {
-    /* display: none; */
-}
-/* Teacher's input fields */
-#teacher-el {
-}
-/* others's input fields */
-#others-el {
-}
-
-/* Save user data button style */
-#save_user_data-btn {
-}
-
-/* Style cencel button */
-#cancel-btn {
-}
 
 /*----------------*\
    RESPONSIVENESS
