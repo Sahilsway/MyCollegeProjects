@@ -1,51 +1,43 @@
-<!-- set_pass-form 
-        Take new password from the user
-        if the email and phone already exist in DataBase
-            redirect to login-form
-        if doesn't exist
-            redirect to set_user_data-form -->
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/style.css" />
-        <title>World Tour - login</title>
-    </head>
-    <body>
-        <div id="login-form" class="form-container">
-            <form action="">
-                <h1 id="f-head">Set your password</h1>
-
-                <p id="err-msg">Please enter correct details!</p>
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Trevelever - Signin</title>
+</head>
+<body>
+    <div id="row">
+        <div class="col" id="form-container">
+            <form id="set-pass-form">
+                <h2 id="f-head" class="otp-head">Set password...</h2>
+                <p id="err-msg">Please enter a strong password</p>
                 <div>
-                    <input
-                        id="user-pass"
-                        class="input-field"
-                        type="password"
-                        placeholder="Type a secure password"
-                    />
+                    <!-- User shouldn't be able to enter less than 8 digits -->
+                    <input type="password" id="user-pass" class="input-field" minlength="8" placeholder="Enter password" required />
+                    <input type="password" id="user-pass-conf" class="input-field" placeholder="Confirm password" required />
                 </div>
-
-                <div>
-                    <input
-                        id="user-pass_con"
-                        class="input-field"
-                        type="password"
-                        placeholder="Retype your password"
-                    />
+                <p id="TandC-msg">By signin, you agree to our <a href="#">Terms & Conditions</a></p>
+                <div id="bold-btn">
+                    <button type="submit" id="set-pass-btn" class="btn">Save</button>
+                    <a class="cencel-btn" href="../index.html" style="text-decoration: none;">Cencel</a>
                 </div>
-
-                <div style="margin-top: 50px;" class="align-btn">
-                    <button id="save_pass-btn">Save</button>
-                    <button id="cancel-btn">Cencel</button>
-                </div>
+                <p id="dir-msg">Already have an account? <a style="text-decoration: none;" href="../index.html">Login</a></p>
             </form>
         </div>
+        <div id="left-content" class="col">
+            <p id="p-head">Trevelever</p>
+            <p id="p-body">Welcome to Trevelever!
+                <br>
+                We are so glad you have chosen to use our traveling agency to help plan your next adventure. At Trevelever, we strive to provide our clients with the best possible travel experience by offering a wide range of customizable travel packages and top-notch customer service.
+                <br>
+                Whether you are looking to relax on a sandy beach, experience the culture and history of a foreign city, or tackle the great outdoors, we have something for everyone. Our team of experienced travel experts is here to help you every step of the way, from finding the perfect destination to booking flights and accommodations.
+                <br>
+                Thank you for choosing Trevelever. We can't wait to help you make unforgettable memories on your next trip!</p>
+        </div>
+    </div>
 
-        <script src="js/set-pass.js"></script>
-    </body>
+    <script src="./assets/js/_otp.js"></script>
+</body>
 </html>
