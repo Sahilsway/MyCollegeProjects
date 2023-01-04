@@ -181,13 +181,17 @@ button {
     margin: 0;
 }
 #about, #contact {
-    position: relative;
-    padding: 0 20px 20px 20px;
-    margin: 20px 90px 0 10px;
     border-radius: 20px;
-    line-height: 25px;
 }
-
+#about {
+    padding: 0;
+    margin: 20px 90px 40px 10px;
+    line-height: 27px;
+}
+#contact {
+    padding: 0;
+    margin: 0 90px 50px 10px;
+}
 #about-head, #contact-head {
     font-size: var(--fs-6);
     padding: 0;
@@ -206,6 +210,10 @@ ul li::before {
     display: inline-block;
     width: 1em;
     margin-left: -1em;
+}
+.info {
+    font-size: var(--fs-8);
+    line-height: 27px;
 }
 
 
@@ -300,9 +308,12 @@ input::-webkit-inner-spin-button {
 \*-----------*/
 #footer {
     padding: 0;
-    margin: 0;
+    margin-left: 100px;
     position: absolute;
-    top: 1360px;
+    top: 1400px;
+}
+.footer-el {
+    font-family: var(--ff-2);
 }
 #news-head {
     font-size: var(--fs-5);
@@ -336,16 +347,15 @@ input::-webkit-inner-spin-button {
     border: 2px solid var(--viridian-green);
     background-color: var(--viridian-green);
     border-radius: var(--radius-6);
+    cursor: pointer;
 }
 #sup-btn:hover {
     color: var(--viridian-green);
     background-color: var(--white-1);
 }
-.footer-el {
-    font-family: var(--ff-2);
-    margin-left: 100px;
+#copyright {
+    margin-top: 30px;
 }
-
 
 /*---------------*\
    RESPOSIVENESS
