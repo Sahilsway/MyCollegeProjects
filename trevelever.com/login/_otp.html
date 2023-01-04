@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Trevelever - Signup</title>
+</head>
+<body>
+    <div id="row">
+        <div class="col" id="form-container">
+            <form id="signup-form">
+                <h2 id="f-head" class="otp-head">Verify your email id...</h2>
+                <p id="err-msg">Enter otp send to your email id</p>
+                <div>
+                    <!-- User should be able to enter only 4 digits -->
+                    <input type="number" id="email-otp" class="input-field" pattern="[0-9]{4}" maxlength="4" placeholder="1234" required />
+                </div>
+                <p id="TandC-msg">By signup, you agree to our <a href="#">Terms & Conditions</a></p>
+                <div id="bold-btn">
+                    <button type="submit" id="verify-otp-btn" class="btn">Verify</button>
+                    <a class="cencel-btn" href="/trevelever.com/index.html" style="text-decoration: none;">Cencel</a>
+                </div>
+                <p id="signup-dir-msg">Already have an account? <a style="text-decoration: none;" href="/trevelever.com/index.html">Login</a></p>
+            </form>
+        </div>
+        <div id="left-content" class="col">
+            <p id="p-head">Trevelever</p>
+            <p id="p-body">Welcome to Trevelever!
+                <br>
+                We are so glad you have chosen to use our traveling agency to help plan your next adventure. At Trevelever, we strive to provide our clients with the best possible travel experience by offering a wide range of customizable travel packages and top-notch customer service.
+                <br>
+                Whether you are looking to relax on a sandy beach, experience the culture and history of a foreign city, or tackle the great outdoors, we have something for everyone. Our team of experienced travel experts is here to help you every step of the way, from finding the perfect destination to booking flights and accommodations.
+                <br>
+                Thank you for choosing Trevelever. We can't wait to help you make unforgettable memories on your next trip!</p>
+        </div>
+    </div>
+
+    <script src="./assets/js/_otp.js"></script>
+</body>
+</html>
