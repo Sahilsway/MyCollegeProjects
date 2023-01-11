@@ -7,7 +7,7 @@
         <title>Trevelever - Home</title>
 
         <!--- favicon --->
-        <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+        <link rel="shortcut icon" href="../assets/favicon.svg" type="image/svg+xml" />
 
         <!--- custom css link --->
         <link rel="stylesheet" href="./assets/css/style.css" />
@@ -15,10 +15,7 @@
         <!--- google font link --->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet"/>
     </head>
 
     <body id="top">
@@ -26,15 +23,9 @@
 
         <header class="header" data-header>
             <div class="container">
-                <a href="#">
-                    <h1 class="logo">Trevelever</h1>
-                </a>
+                <a href="./home.html"> <h1 class="logo">Trevelever</h1> </a>
 
-                <button
-                    class="nav-toggle-btn"
-                    data-nav-toggle-btn
-                    aria-label="Toggle Menu"
-                >
+                <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
                     <ion-icon name="menu-outline" class="open"></ion-icon>
                     <ion-icon name="close-outline" class="close"></ion-icon>
                 </button>
@@ -42,11 +33,11 @@
                 <nav class="navbar">
                     <ul class="navbar-list">
                         <li>
-                            <a href="#" class="navbar-link">Home</a>
+                            <a href="./home.html" class="navbar-link">Home</a>
                         </li>
 
                         <li>
-                            <a href="#" class="navbar-link">About Us</a>
+                            <button id="about-us-1" class="navbar-link">About us</button>
                         </li>
 
                         <li>
@@ -62,11 +53,11 @@
                         </li>
 
                         <li>
-                            <a href="#" class="navbar-link">Contact Us</a>
+                            <a href="#" class="navbar-link">Contact us</a>
                         </li>
                     </ul>
 
-                    <a href="#" class="btn btn-secondary">Booking Now</a>
+                    <a href="#" class="btn btn-secondary">My Dashboard</a>
                 </nav>
             </div>
         </header>
@@ -75,37 +66,13 @@
             <article>
                 <!--- #HERO --->
 
-                <section
-                    class="section hero"
-                    style="
-                        background-image: url('./assets/images/hero-bg-bottom.png')
-                            url('./assets/images/hero-bg-top.png');
-                    "
-                >
+                <section class="section hero" style="background-image: url('./assets/images/hero-bg-bottom.png') url('./assets/images/hero-bg-top.png');">
                     <div class="container">
-                        <img
-                            src="./assets/images/shape-1.png"
-                            width="61"
-                            height="61"
-                            alt="Vector Shape"
-                            class="shape shape-1"
-                        />
+                        <img src="./assets/images/shape-1.png" width="61" height="61" alt="Vector Shape" id="shape-1" class="shape"/>
 
-                        <img
-                            src="./assets/images/shape-2.png"
-                            width="56"
-                            height="74"
-                            alt="Vector Shape"
-                            class="shape shape-2"
-                        />
+                        <img src="./assets/images/shape-2.png" width="56" height="74" alt="Vector Shape" id="shape-2" class="shape"/>
 
-                        <img
-                            src="./assets/images/shape-3.png"
-                            width="57"
-                            height="72"
-                            alt="Vector Shape"
-                            class="shape shape-3"
-                        />
+                        <img src="./assets/images/shape-3.png" width="57" height="72" alt="Vector Shape" id="shape-3" class="shape"/>
 
                         <div class="hero-content">
                             <p class="section-subtitle">Explore Your Travel</p>
@@ -118,25 +85,14 @@
                             </p>
 
                             <div class="btn-group">
-                                <a href="#" class="btn btn-primary"
-                                    >Contact Us</a
-                                >
+                                <a href="#" class="btn btn-primary">Contact Us</a>
 
-                                <a href="#" class="btn btn-outline"
-                                    >Learn More</a
-                                >
+                                <button id="about-us-2" class="btn btn-outline">Learn More</button>
                             </div>
                         </div>
 
                         <figure class="hero-banner">
-                            <img
-                                src="./assets/images/hero-banner.png"
-                                width="686"
-                                height="812"
-                                loading="lazy"
-                                alt="hero banner"
-                                class="w-100"
-                            />
+                            <img src="./assets/images/hero-banner.png" width="686" height="812" loading="lazy" alt="hero banner" class="w-100"/>
                         </figure>
                     </div>
                 </section>
@@ -153,20 +109,13 @@
                             <li class="w-50">
                                 <a href="#" class="destination-card">
                                     <figure class="card-banner">
-                                        <img
-                                            src="./assets/images/destination-1.jpg"
-                                            width="1140"
-                                            height="1100"
-                                            loading="lazy"
-                                            alt="Malé, Maldives"
-                                            class="img-cover"
-                                        />
+                                        <img src="./assets/images/destination-1.jpg" width="1140" height="1100" loading="lazy" alt="Malé, Maldives" class="img-cover"/>
                                     </figure>
 
                                     <div class="card-content">
-                                        <p class="card-subtitle">Malé</p>
+                                        <p class="card-subtitle">Goa</p>
 
-                                        <h3 class="h3 card-title">Maldives</h3>
+                                        <h3 class="h3 card-title">India</h3>
                                     </div>
                                 </a>
                             </li>
@@ -174,14 +123,7 @@
                             <li class="w-50">
                                 <a href="#" class="destination-card">
                                     <figure class="card-banner">
-                                        <img
-                                            src="./assets/images/destination-2.jpg"
-                                            width="1140"
-                                            height="1100"
-                                            loading="lazy"
-                                            alt="Bangkok, Thailand"
-                                            class="img-cover"
-                                        />
+                                        <img src="./assets/images/destination-2.jpg" width="1140" height="1100" loading="lazy" alt="Bangkok, Thailand" class="img-cover"/>
                                     </figure>
 
                                     <div class="card-content">
@@ -195,14 +137,7 @@
                             <li>
                                 <a href="#" class="destination-card">
                                     <figure class="card-banner">
-                                        <img
-                                            src="./assets/images/destination-3.jpg"
-                                            width="1110"
-                                            height="480"
-                                            loading="lazy"
-                                            alt="Kuala Lumpur, Malaysia"
-                                            class="img-cover"
-                                        />
+                                        <img src="./assets/images/destination-3.jpg" width="1110" height="480" loading="lazy" alt="Kuala Lumpur, Malaysia" class="img-cover"/>
                                     </figure>
 
                                     <div class="card-content">
@@ -218,14 +153,7 @@
                             <li>
                                 <a href="#" class="destination-card">
                                     <figure class="card-banner">
-                                        <img
-                                            src="./assets/images/destination-4.jpg"
-                                            width="1110"
-                                            height="480"
-                                            loading="lazy"
-                                            alt="Kathmandu, Nepal"
-                                            class="img-cover"
-                                        />
+                                        <img src="./assets/images/destination-4.jpg" width="1110" height="480" loading="lazy" alt="Kathmandu, Nepal" class="img-cover"/>
                                     </figure>
 
                                     <div class="card-content">
@@ -239,14 +167,7 @@
                             <li>
                                 <a href="#" class="destination-card">
                                     <figure class="card-banner">
-                                        <img
-                                            src="./assets/images/destination-5.jpg"
-                                            width="1110"
-                                            height="480"
-                                            loading="lazy"
-                                            alt="Jakarta, Indonesia"
-                                            class="img-cover"
-                                        />
+                                        <img src="./assets/images/destination-5.jpg" width="1110" height="480" loading="lazy" alt="Jakarta, Indonesia" class="img-cover"/>
                                     </figure>
 
                                     <div class="card-content">
@@ -273,63 +194,38 @@
                                 <div class="popular-card">
                                     <figure class="card-banner">
                                         <a href="#">
-                                            <img
-                                                src="./assets/images/popular-1.jpg"
-                                                width="740"
-                                                height="518"
-                                                loading="lazy"
-                                                alt="Kuala Lumpur, Malaysia"
-                                                class="img-cover"
-                                            />
+                                            <img src="./assets/images/popular-1.jpg" width="740" height="518" loading="lazy" alt="Abudabi, Dubai" class="img-cover"/>
                                         </a>
 
                                         <span class="card-badge">
-                                            <ion-icon
-                                                name="time-outline"
-                                            ></ion-icon>
+                                            <ion-icon name="time-outline"></ion-icon>
 
-                                            <time datetime="P12D">12 Days</time>
+                                            <time datetime="P12D">07 Days</time>
                                         </span>
                                     </figure>
 
                                     <div class="card-content">
                                         <div class="card-wrapper">
                                             <div class="card-price">
-                                                From $50.00
+                                                From $53.75
                                             </div>
 
                                             <div class="card-rating">
-                                                <ion-icon
-                                                    name="star"
-                                                ></ion-icon>
-                                                <ion-icon
-                                                    name="star"
-                                                ></ion-icon>
-                                                <ion-icon
-                                                    name="star"
-                                                ></ion-icon>
-                                                <ion-icon
-                                                    name="star"
-                                                ></ion-icon>
-                                                <ion-icon
-                                                    name="star-outline"
-                                                ></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
 
-                                                <data value="2">(2)</data>
+                                                <data value="2">(43)</data>
                                             </div>
                                         </div>
 
                                         <h3 class="card-title">
-                                            <a href="#"
-                                                >A good traveler has no fixed
-                                                plans and is not intent on
-                                                arriving.</a
-                                            >
+                                            <a href="#">We are planning to visit Male Maldives, wanna join us? Register before we hit the road because you can wait but clock is ticking...</a>
                                         </h3>
 
-                                        <address class="card-location">
-                                            Kuala Lumpur, Malaysia
-                                        </address>
+                                        <address class="card-location">Male, Maldives</address>
                                     </div>
                                 </div>
                             </li>
@@ -338,63 +234,34 @@
                                 <div class="popular-card">
                                     <figure class="card-banner">
                                         <a href="#">
-                                            <img
-                                                src="./assets/images/popular-2.jpg"
-                                                width="740"
-                                                height="518"
-                                                loading="lazy"
-                                                alt="Kuala Lumpur, Malaysia"
-                                                class="img-cover"
-                                            />
+                                            <img src="./assets/images/popular-2.jpg" width="740" height="518" loading="lazy" alt="Kuala Lumpur, Malaysia" class="img-cover"/>
                                         </a>
 
                                         <span class="card-badge">
-                                            <ion-icon
-                                                name="time-outline"
-                                            ></ion-icon>
+                                            <ion-icon name="time-outline"></ion-icon>
 
-                                            <time datetime="P12D">12 Days</time>
+                                            <time datetime="P12D">03 Days</time>
                                         </span>
                                     </figure>
 
                                     <div class="card-content">
                                         <div class="card-wrapper">
                                             <div class="card-price">
-                                                From $50.00
+                                                From $96.34
                                             </div>
 
                                             <div class="card-rating">
-                                                <ion-icon
-                                                    name="star"
-                                                ></ion-icon>
-                                                <ion-icon
-                                                    name="star"
-                                                ></ion-icon>
-                                                <ion-icon
-                                                    name="star"
-                                                ></ion-icon>
-                                                <ion-icon
-                                                    name="star"
-                                                ></ion-icon>
-                                                <ion-icon
-                                                    name="star-outline"
-                                                ></ion-icon>
+                                                <ion-icon name="star"></ion-icon>                                                 <ion-icon name="star"></ion-icon>                                                 <ion-icon name="star"></ion-icon>                                                 <ion-icon name="star"></ion-icon>                                                 <ion-icon name="star-outline"></ion-icon>
 
-                                                <data value="2">(2)</data>
+                                                <data value="2">(76)</data>
                                             </div>
                                         </div>
 
                                         <h3 class="card-title">
-                                            <a href="#"
-                                                >A good traveler has no fixed
-                                                plans and is not intent on
-                                                arriving.</a
-                                            >
+                                            <a href="#">Visiting Andaman and Nicobar Islands, a once in a life time opertunity. Opertunity you don't wanna miss out. Join us!</a>
                                         </h3>
 
-                                        <address class="card-location">
-                                            Kuala Lumpur, Malaysia
-                                        </address>
+                                        <address class="card-location">Andaman and Nicobar Islands, India</address>
                                     </div>
                                 </div>
                             </li>
@@ -403,63 +270,34 @@
                                 <div class="popular-card">
                                     <figure class="card-banner">
                                         <a href="#">
-                                            <img
-                                                src="./assets/images/popular-3.jpg"
-                                                width="740"
-                                                height="518"
-                                                loading="lazy"
-                                                alt="Kuala Lumpur, Malaysia"
-                                                class="img-cover"
-                                            />
+                                            <img src="./assets/images/popular-3.jpg" width="740" height="518" loading="lazy" alt="Kuala Lumpur, Malaysia" class="img-cover"/>
                                         </a>
 
                                         <span class="card-badge">
-                                            <ion-icon
-                                                name="time-outline"
-                                            ></ion-icon>
+                                            <ion-icon name="time-outline"></ion-icon>
 
-                                            <time datetime="P12D">12 Days</time>
+                                            <time datetime="P12D">05 Days</time>
                                         </span>
                                     </figure>
 
                                     <div class="card-content">
                                         <div class="card-wrapper">
                                             <div class="card-price">
-                                                From $50.00
+                                                From $59.11
                                             </div>
 
                                             <div class="card-rating">
-                                                <ion-icon
-                                                    name="star"
-                                                ></ion-icon>
-                                                <ion-icon
-                                                    name="star"
-                                                ></ion-icon>
-                                                <ion-icon
-                                                    name="star"
-                                                ></ion-icon>
-                                                <ion-icon
-                                                    name="star"
-                                                ></ion-icon>
-                                                <ion-icon
-                                                    name="star-outline"
-                                                ></ion-icon>
+                                                <ion-icon name="star"></ion-icon>                                                 <ion-icon name="star"></ion-icon>                                                 <ion-icon name="star"></ion-icon>                                                 <ion-icon name="star"></ion-icon>                                                 <ion-icon name="star-outline"></ion-icon>
 
-                                                <data value="2">(2)</data>
+                                                <data value="2">(98)</data>
                                             </div>
                                         </div>
 
                                         <h3 class="card-title">
-                                            <a href="#"
-                                                >A good traveler has no fixed
-                                                plans and is not intent on
-                                                arriving.</a
-                                            >
+                                            <a href="#">Ever visited Paris the "City of light", most populous, largest and capital city of France? Planning to go there someday? This is the right moment.</a>
                                         </h3>
 
-                                        <address class="card-location">
-                                            Kuala Lumpur, Malaysia
-                                        </address>
+                                        <address class="card-location">Paris, France</address>
                                     </div>
                                 </div>
                             </li>
@@ -479,10 +317,7 @@
                             </h2>
 
                             <p class="about-text">
-                                Lorem Ipsum available, but the majority have
-                                suffered alteration in some form, by injected
-                                humour, or randomised words which don't look
-                                even slightly believable.
+                                At Trevelever, we strive to offer the best travel experiences with the cheapest cost. Over 200 employees are working around the clock and available 24/7 for you, we are equipped to assist with any needs you may have. From finding the perfect tour and destination to booking hotels and providing expert guides, we handle every aspect of your trip. Our special helpline is also available to ensure a smooth and enjoyable journey.
                             </p>
 
                             <ul class="about-list">
@@ -492,14 +327,10 @@
                                     </div>
 
                                     <div class="about-item-content">
-                                        <h3 class="h3 about-item-title">
-                                            Tour guide
-                                        </h3>
+                                        <h3 class="h3 about-item-title">Tour guide</h3>
 
                                         <p class="about-item-text">
-                                            Lorem Ipsum available, but the
-                                            majority have suffered alteration in
-                                            some.
+                                            Treveling to new places scares you? Well not any more because we've world's expert tour guides to guide you along the way and give you best and memorable experiences.
                                         </p>
                                     </div>
                                 </li>
@@ -515,9 +346,7 @@
                                         </h3>
 
                                         <p class="about-item-text">
-                                            Lorem Ipsum available, but the
-                                            majority have suffered alteration in
-                                            some.
+                                            We offer the best budget friendly tours that suits with your wallet. You can choose any destinations, we'll manage the price for you.
                                         </p>
                                     </div>
                                 </li>
@@ -533,26 +362,17 @@
                                         </h3>
 
                                         <p class="about-item-text">
-                                            Lorem Ipsum available, but the
-                                            majority have suffered alteration in
-                                            some.
+                                            Over 200 employee are working at trevelever and the support landline is available 24/7 just for you. You can rely on us and we'll handle everything you need, you just have to trevel with us and enjoy the journey.10
                                         </p>
                                     </div>
                                 </li>
                             </ul>
 
-                            <a href="#" class="btn btn-primary">Booking Now</a>
+                            <a href="#" class="btn btn-primary">Book Now</a>
                         </div>
 
                         <figure class="about-banner">
-                            <img
-                                src="./assets/images/about-banner.png"
-                                width="756"
-                                height="842"
-                                loading="lazy"
-                                alt=""
-                                class="w-100"
-                            />
+                            <img src="./assets/images/about-banner.png" width="756" height="842" loading="lazy" alt="" class="w-100"/>
                         </figure>
                     </div>
                 </section>
@@ -563,29 +383,18 @@
                     <div class="container">
                         <p class="section-subtitle">From The Blog Post</p>
 
-                        <h2 class="h2 section-title">Latest News & Articles</h2>
+                        <h2 class="h2 section-title">Latest Uploads</h2>
 
                         <ul class="blog-list">
                             <li>
                                 <div class="blog-card">
                                     <figure class="card-banner">
                                         <a href="#">
-                                            <img
-                                                src="./assets/images/popular-1.jpg"
-                                                width="740"
-                                                height="518"
-                                                loading="lazy"
-                                                alt="A good traveler has no fixed plans and is not intent on arriving."
-                                                class="img-cover"
-                                            />
+                                            <img src="./assets/images/popular-1.jpg" width="740" height="518" loading="lazy" alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover"/>
                                         </a>
 
                                         <span class="card-badge">
-                                            <ion-icon
-                                                name="time-outline"
-                                            ></ion-icon>
-
-                                            <time datetime="12-04">04 Dec</time>
+                                            <time datetime="12-04">08 Jan 23</time>
                                         </span>
                                     </figure>
 
@@ -593,32 +402,19 @@
                                         <div class="card-wrapper">
                                             <div class="author-wrapper">
                                                 <figure class="author-avatar">
-                                                    <img
-                                                        src="./assets/images/author-avatar.png"
-                                                        width="30"
-                                                        height="30"
-                                                        alt="Jony bristow"
-                                                    />
+                                                    <img src="./assets/images/author-avatar.png" width="30" height="30" alt="Jony bristow"/>
                                                 </figure>
 
                                                 <div>
-                                                    <a
-                                                        href="#"
-                                                        class="author-name"
-                                                        >Jony bristow</a
-                                                    >
+                                                    <a href="#" class="author-name" >Tommy Anderson</a>
 
-                                                    <p class="author-title">
-                                                        Admin
+                                                    <p class="blog-type">
+                                                        Trevel Blog
                                                     </p>
                                                 </div>
                                             </div>
 
-                                            <time
-                                                class="publish-time"
-                                                datetime="10:30"
-                                                >10:30 AM</time
-                                            >
+                                            <time class="publish-time" datetime="10:30" >09:37 PM</time>
                                         </div>
 
                                         <h3 class="card-title">
@@ -632,10 +428,7 @@
                                         <a href="#" class="btn-link">
                                             <span>Read More</span>
 
-                                            <ion-icon
-                                                name="arrow-forward-outline"
-                                                aria-hidden="true"
-                                            ></ion-icon>
+                                            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                                         </a>
                                     </div>
                                 </div>
@@ -645,22 +438,11 @@
                                 <div class="blog-card">
                                     <figure class="card-banner">
                                         <a href="#">
-                                            <img
-                                                src="./assets/images/blog-2.jpg"
-                                                width="740"
-                                                height="518"
-                                                loading="lazy"
-                                                alt="A good traveler has no fixed plans and is not intent on arriving."
-                                                class="img-cover"
-                                            />
+                                            <img src="./assets/images/blog-2.jpg" width="740" height="518" loading="lazy" alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover"/>
                                         </a>
 
                                         <span class="card-badge">
-                                            <ion-icon
-                                                name="time-outline"
-                                            ></ion-icon>
-
-                                            <time datetime="12-04">04 Dec</time>
+                                            <time datetime="12-04">04 Jan 23</time>
                                         </span>
                                     </figure>
 
@@ -668,49 +450,29 @@
                                         <div class="card-wrapper">
                                             <div class="author-wrapper">
                                                 <figure class="author-avatar">
-                                                    <img
-                                                        src="./assets/images/author-avatar.png"
-                                                        width="30"
-                                                        height="30"
-                                                        alt="Jony bristow"
-                                                    />
+                                                    <img src="./assets/images/author-avatar.png" width="30" height="30" alt="Jony bristow"/>
                                                 </figure>
 
                                                 <div>
-                                                    <a
-                                                        href="#"
-                                                        class="author-name"
-                                                        >Jony bristow</a
-                                                    >
+                                                    <a href="#" class="author-name" >Gerret Cracker</a>
 
-                                                    <p class="author-title">
-                                                        Admin
+                                                    <p class="blog-type">
+                                                        Article
                                                     </p>
                                                 </div>
                                             </div>
 
-                                            <time
-                                                class="publish-time"
-                                                datetime="10:30"
-                                                >10:30 AM</time
-                                            >
+                                            <time class="publish-time" datetime="10:30" >03:42 AM</time>
                                         </div>
 
                                         <h3 class="card-title">
-                                            <a href="#">
-                                                A good traveler has no fixed
-                                                plans and is not intent on
-                                                arriving.
-                                            </a>
+                                            <a href="#">India is the only country with over 100s of culture and religions.</a>
                                         </h3>
 
                                         <a href="#" class="btn-link">
                                             <span>Read More</span>
 
-                                            <ion-icon
-                                                name="arrow-forward-outline"
-                                                aria-hidden="true"
-                                            ></ion-icon>
+                                            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                                         </a>
                                     </div>
                                 </div>
@@ -720,22 +482,11 @@
                                 <div class="blog-card">
                                     <figure class="card-banner">
                                         <a href="#">
-                                            <img
-                                                src="./assets/images/blog-3.jpg"
-                                                width="740"
-                                                height="518"
-                                                loading="lazy"
-                                                alt="A good traveler has no fixed plans and is not intent on arriving."
-                                                class="img-cover"
-                                            />
+                                            <img src="./assets/images/blog-3.jpg" width="740" height="518" loading="lazy" alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover"/>
                                         </a>
 
                                         <span class="card-badge">
-                                            <ion-icon
-                                                name="time-outline"
-                                            ></ion-icon>
-
-                                            <time datetime="12-04">04 Dec</time>
+                                            <time datetime="12-04">30 Dec 22</time>
                                         </span>
                                     </figure>
 
@@ -743,49 +494,29 @@
                                         <div class="card-wrapper">
                                             <div class="author-wrapper">
                                                 <figure class="author-avatar">
-                                                    <img
-                                                        src="./assets/images/author-avatar.png"
-                                                        width="30"
-                                                        height="30"
-                                                        alt="Jony bristow"
-                                                    />
+                                                    <img src="./assets/images/author-avatar.png" width="30" height="30" alt="Jony bristow"/>
                                                 </figure>
 
                                                 <div>
-                                                    <a
-                                                        href="#"
-                                                        class="author-name"
-                                                        >Jony bristow</a
-                                                    >
+                                                    <a href="#" class="author-name" >Lewis Hamilton</a>
 
-                                                    <p class="author-title">
-                                                        Admin
+                                                    <p class="blog-type">
+                                                        Food blog
                                                     </p>
                                                 </div>
                                             </div>
 
-                                            <time
-                                                class="publish-time"
-                                                datetime="10:30"
-                                                >10:30 AM</time
-                                            >
+                                            <time class="publish-time" datetime="10:30" >03:17 PM</time>
                                         </div>
 
                                         <h3 class="card-title">
-                                            <a href="#">
-                                                A good traveler has no fixed
-                                                plans and is not intent on
-                                                arriving.
-                                            </a>
+                                            <a href="#">I've tried different foods around the world and this is what I thing.</a>
                                         </h3>
 
                                         <a href="#" class="btn-link">
                                             <span>Read More</span>
 
-                                            <ion-icon
-                                                name="arrow-forward-outline"
-                                                aria-hidden="true"
-                                            ></ion-icon>
+                                            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                                         </a>
                                     </div>
                                 </div>
@@ -798,10 +529,7 @@
 
         <!--- #FOOTER --->
 
-        <footer
-            class="footer"
-            style="background-image: url('./assets/images/footer-bg.png')"
-        >
+        <footer class="footer" style="background-image: url('./assets/images/footer-bg>')">
             <div class="container">
                 <div class="footer-top">
                     <ul class="footer-list">
@@ -810,25 +538,19 @@
                         </li>
 
                         <li>
-                            <a href="#" class="footer-link"
-                                >Indonesia, Jakarta</a
-                            >
+                            <a href="#" class="footer-link">Indonesia, Jakarta</a>
                         </li>
 
                         <li>
-                            <a href="#" class="footer-link">Maldives, Malé</a>
+                            <a href="#" class="footer-link">India, Goa</a>
                         </li>
 
                         <li>
-                            <a href="#" class="footer-link"
-                                >Australia, Canberra</a
-                            >
+                            <a href="#" class="footer-link">Australia, Canberra</a>
                         </li>
 
                         <li>
-                            <a href="#" class="footer-link"
-                                >Thailand, Bangkok</a
-                            >
+                            <a href="#" class="footer-link">Thailand, Bangkok</a>
                         </li>
 
                         <li>
@@ -842,23 +564,23 @@
                         </li>
 
                         <li>
-                            <a href="#" class="footer-link">Travel</a>
+                            <a href="#" class="footer-link">Travel blogs</a>
                         </li>
 
                         <li>
-                            <a href="#" class="footer-link">Lifestyle</a>
+                            <a href="#" class="footer-link">Place review</a>
                         </li>
 
                         <li>
-                            <a href="#" class="footer-link">Fashion</a>
+                            <a href="#" class="footer-link">News</a>
                         </li>
 
                         <li>
-                            <a href="#" class="footer-link">Education</a>
+                            <a href="#" class="footer-link">Articles</a>
                         </li>
 
                         <li>
-                            <a href="#" class="footer-link">Food & Drink</a>
+                            <a href="#" class="footer-link">Food blogs</a>
                         </li>
                     </ul>
 
@@ -868,11 +590,12 @@
                         </li>
 
                         <li>
-                            <a href="#" class="footer-link">About</a>
+                            <button id="about-us-3" class="footer-link" style="color: rgb(210, 210, 210);">About us</button>
+                            <!-- <a href="#" class="footer-link">About us</a> -->
                         </li>
 
                         <li>
-                            <a href="#" class="footer-link">Contact</a>
+                            <a href="#" class="footer-link">Contact us</a>
                         </li>
 
                         <li>
@@ -880,13 +603,11 @@
                         </li>
 
                         <li>
-                            <a href="#" class="footer-link">Booking</a>
+                            <a href="#" class="footer-link">Destinations</a>
                         </li>
 
                         <li>
-                            <a href="#" class="footer-link"
-                                >Terms & Conditions</a
-                            >
+                            <a href="#" class="footer-link">Terms & Conditions</a>
                         </li>
                     </ul>
 
@@ -899,41 +620,29 @@
                         </p>
 
                         <form action="" class="newsletter-form">
-                            <input
-                                type="email"
-                                name="email"
-                                required
-                                placeholder="Email address"
-                                class="newsletter-input"
-                            />
+                            <input type="email" name="email" required placeholder="Email address" class="newsletter-input"/>
 
-                            <button type="submit" class="btn btn-primary">
-                                Subscribe
-                            </button>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
                         </form>
                     </div>
                 </div>
 
                 <div class="footer-bottom">
-                    <a href="#" class="logo">Trevelever</a>
+                    <a href="./home.html" class="logo">Trevelever</a>
 
                     <p class="copyright">
                         &copy; 2022
-                        <a href="#" class="copyright-link">codewithsadee</a>.
+                        <a href="#" class="copyright-link">xs_sahil</a>.
                         All Rights Reserved
                     </p>
 
                     <ul class="social-list">
                         <li>
-                            <a href="#" class="social-link">
-                                <ion-icon name="logo-facebook"></ion-icon>
-                            </a>
+                            <a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a>
                         </li>
 
                         <li>
-                            <a href="#" class="social-link">
-                                <ion-icon name="logo-twitter"></ion-icon>
-                            </a>
+                            <a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a>
                         </li>
 
                         <li>
@@ -949,9 +658,7 @@
                         </li>
 
                         <li>
-                            <a href="#" class="social-link">
-                                <ion-icon name="logo-google"></ion-icon>
-                            </a>
+                            <a href="#" class="social-link"><ion-icon name="logo-google"></ion-icon></a>
                         </li>
                     </ul>
                 </div>

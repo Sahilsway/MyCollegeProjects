@@ -1,10 +1,10 @@
-Tourest - Explore the World
+Trevelever - Explore the World
 
 
 
 #.......... HEADER ..........#
 
-Tourest
+Trevelever
 
 aria-label = Toggle Menu
 <ion-icon name="menu-outline"></ion-icon>
@@ -174,7 +174,7 @@ placeholder = Email address
 
 Subscribe
 
-Tourest
+Trevelever
 
 &copy; 2022 codewithsadee. All Rights Reserved
 

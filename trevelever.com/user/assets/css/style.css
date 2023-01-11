@@ -630,6 +630,9 @@ body {
 .footer .footer-link:is(:hover, :focus) {
     color: var(--white-1);
 }
+/* #about-us-3:is(:hover, :focus) {
+    color: var(--white-1);
+} */
 
 .newsletter-text {
     font-size: var(--fs-7);
@@ -889,18 +892,18 @@ body {
         animation: rotate 8s linear infinite;
     }
 
-    .shape-1 {
+    #shape-1 {
         top: 60px;
         left: 47%;
     }
 
-    .shape-2 {
+    #shape-2 {
         top: 20%;
         right: 50px;
         animation-delay: 0.25s;
     }
 
-    .shape-3 {
+    #shape-3 {
         left: 40%;
         bottom: 20%;
         animation-delay: 0.5s;

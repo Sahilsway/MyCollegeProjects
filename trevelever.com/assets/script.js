@@ -1,15 +1,12 @@
-document.getElementById("login-btn").onclick = () => {
-    // Scroll down
-}
-
-document.getElementById("about-btn").onclick = () => {
-    // Scroll down
-}
-
-document.getElementById("contact-btn").onclick = () => {
-    // Scroll down
-}
-
+document.getElementById("login-btn").addEventListener("click", function () {
+    window.scroll({ top: 650, left: 0, behavior: 'smooth' });
+});
+document.getElementById("about-btn").addEventListener("click", function () {
+    window.scroll({ top: 750, left: 0, behavior: 'smooth' });
+});
+document.getElementById("contact-btn").addEventListener("click", function () {
+    window.scroll({ top: 950, left: 0, behavior: 'smooth' });
+});
 document.getElementById("signup-btn").onclick = () => {
     location.href = "./login/_verify.html"
 }
@@ -17,83 +14,107 @@ document.getElementById("signup-btn").onclick = () => {
 /*--------------*\
     LOGIN FORM
 \*--------------*/
-let form = document.getElementById('login-form');
-form.addEventListener('submit', preventReload);
+// Function to validate email
+function validateEmail(email) {
+    // Use the regular expression to check if the email is valid
+    return /^[a-zA-Z0-9.+]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9][a-zA-Z0-9-]*\.)+[a-zA-Z0-9-]{2,}$/.test(email);
+}
 
-function preventReload(event) {
-    // Prevent the form from reloading the page
+// Function to validate password
+function validatePassword(password) {
+    // Check if the password is at least 8 characters long
+    if (password.length < 8) {
+        return false;
+    }
+    // Use the regular expression to check if the password is valid
+    return /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])/.test(password);
+}
+
+// Object to store error messages
+const errorMessages = {
+    404: 'Email not registered',
+    401: 'Incorrect password',
+    default: 'Error, please try again'
+};
+
+// Listen for the submit event on the login form
+document.getElementById('login-form').addEventListener('submit', (event) => {
+    // Prevent the default form submission behavior
     event.preventDefault();
 
-    // Validate the form
-    const user_email = document.getElementById("user-email")
-    const user_pass = document.getElementById("user-pass")
-    const err_msg = document.getElementById("err-msg")
-    let message = "Please enter your email and password!"
-    document.getElementById("sub-login-btn").onclick = () => {
-        if(validate_email(user_email.value)) {
-            if(validate_pass(user_pass.value)) {
-                if(checkDB(user_email.value)) {
-                    location.href = "./user/home.html"
-                }else {
-                    message = "Your email Id is not registered, You can create a new account instead"
-                    err_msg.style.color = red
-                }
-            }
-        }
-        // 
-        console.log("Clicked")
-    }
+    // Get the login form data
+    const formData = new FormData(event.target);
+    const email = formData.get('email');
+    const password = formData.get('password');
 
-    function validate_email(email) {
-        if(email == "") {
-            message = "Email id can't be blank"
-            err_msg.style.color = red
-            return false
-        } else if(email != /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/) {
-            message = "Enter a valid email address"
-            err_msg.style.color = red
-            return false
-        } else {
-            return true
-        }
-        err_msg.textContent = message
-    }
-
-    function validate_pass(pass) {
-        if(pass.length < 8) { 
-            message = "Password must be at least 8 characters"
-            err_msg.style.color = red
-            return false
-        } else if(pass.search(/[a-z]/) < 0) { 
-            message = "Passwrd must contain at least one lowercase letter"
-            err_msg.style.color = red
-            return false 
-        } else if(pass.search(/[A-Z]/) < 0) { 
-            message = "Password must contain at least one uppercase letter"
-            err_msg.style.color = red
-            return false
-        } else if(pass.search(/[0-9]/) < 0) { 
-            message = "Password must contain at least one number"
-            err_msg.style.color = red
-            return false
-        } else {
-            return true
-        }
-        err_msg.textContent = message
-    }
-}
-
-function checkDB(email, pass) {
-    // User exist
-    return true
+    // ************************----------------------------------------************************* \\
     
-    // User doesn't exist
-    return false
-}
+    // Validate the email
+    // if (!validateEmail(email)) {
+    //     document.getElementById('err-msg').textContent = 'Enter a valid email';
+    //     return;
+    // }
 
-// Newsletter
-let newsemail = []
-const news_user_email = document.getElementById("news-mail")
-document.getElementById("sup-btn").onclick = () => {
-    newsemail.push(news_user_email.value)
-}
+    // Validate the password
+    // if (!validatePassword(password)) {
+    //     if (password.length < 8) {
+    //         document.getElementById('err-msg').textContent = 'Password must be at least 8 characters';
+    //     } else {
+    //         document.getElementById('err-msg').textContent = 'Password should contain at least one uppercase, one lowercase, and one number';
+    //     }
+    //     return;
+    // }
+
+    // Show the loading indicator
+    document.getElementById('loading-indicator').style.display = 'block';
+
+    // Send a POST request to the server with the form data
+    fetch('./form-handler.js', {
+        method: 'POST',
+        body: formData
+    })
+    .then((response) => {
+        // Get the error message from the errorMessages object
+        const errorMessage = errorMessages[response.status] || errorMessages.default;
+
+        if (response.ok) {
+            // Redirect the user to the home.html page
+            window.location.replace('/user/home.html');
+        } else {
+            // Update the error message text
+            document.getElementById('err-msg').textContent = errorMessages.default;
+        }
+
+        // Hide the loading indicator
+        document.getElementById('loading-indicator').style.display = 'none';
+    })
+    .catch((error) => {
+        // Do something with the error here
+        // Hide the loading indicator
+        document.getElementById('loading-indicator').style.display = 'none';
+    });
+});
+
+/*------------*\
+   Newsletter
+\*------------*/
+document.getElementById("sub-btn").addEventListener("click", function() {
+    // Get the email address from the text field
+    const email = document.getElementById("news-mail").value;
+
+    // Send an HTTP POST request to the server
+    fetch("/login", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ email })
+    })
+    .then(response => {
+        if (response.ok) {
+            console.log("Email added to newsletter!");
+        } else {
+            console.error("Error adding email to newsletter.");
+        }
+    });
+});

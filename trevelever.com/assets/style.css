@@ -214,6 +214,7 @@ ul li::before {
 .info {
     font-size: var(--fs-8);
     line-height: 27px;
+    margin: 6px 0 15px 0;
 }
 
 
@@ -310,15 +311,14 @@ input::-webkit-inner-spin-button {
     padding: 0;
     margin-left: 100px;
     position: absolute;
-    top: 1400px;
+    top: 1360px;
 }
 .footer-el {
     font-family: var(--ff-2);
 }
 #news-head {
     font-size: var(--fs-5);
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 #news-body {
     font-size: var(--fs-8);
@@ -354,7 +354,7 @@ input::-webkit-inner-spin-button {
     background-color: var(--white-1);
 }
 #copyright {
-    margin-top: 30px;
+    margin-top: 24px;
 }
 
 /*---------------*\

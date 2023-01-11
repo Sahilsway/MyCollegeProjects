@@ -1,19 +1,10 @@
 <div align="center">
-  
-  ![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/tourest)
-  ![GitHub stars](https://img.shields.io/github/stars/codewithsadee/tourest?style=social)
-  ![GitHub forks](https://img.shields.io/github/forks/codewithsadee/tourest?style=social)
-  [![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee)
-  [![YouTube Video Views](https://img.shields.io/youtube/views/9ts7JnruWg4?style=social)](https://youtu.be/9ts7JnruWg4)
 
-  <br />
-  <br />
+  <h2 align="center">Trevelever - Travel website</h2>
 
-  <h2 align="center">Tourest - Travel website</h2>
+  Trevelever is fully responsive travel website, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
 
-  Tourest is fully responsive travel website, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
-
-  <a href="https://codewithsadee.github.io/tourest/"><strong>➥ Live Demo</strong></a>
+  <a href="https://S-Swargiary.github.io/trevelever/"><strong>➥ Live Demo</strong></a>
 
 </div>
 
@@ -21,7 +12,7 @@
 
 ### Demo Screeshots
 
-![Tourest Desktop Demo](./readme-images/desktop.png "Desktop Demo")
+![Trevelever Desktop Demo](./readme-images/desktop.png "Desktop Demo")
 
 ### Prerequisites
 
@@ -31,23 +22,23 @@ Before you begin, ensure you have met the following requirements:
 
 ### Run Locally
 
-To run **Tourest** locally, run this command on your git bash:
+To run **Trevelever** locally, run this command on your git bash:
 
 Linux and macOS:
 
 ```bash
-sudo git clone https://github.com/codewithsadee/tourest.git
+sudo git clone https://github.com/S-Swargiary/MyColegeProject.git
 ```
 
 Windows:
 
 ```bash
-git clone https://github.com/codewithsadee/tourest.git
+git clone https://github.com/S-Swargiary/MyColegeProject.git
 ```
 
 ### Contact
 
-If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
+If you want to contact with me you can reach me at [Email](sahilswargiary.personal@gmail.com).
 
 ### License
 

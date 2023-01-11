@@ -1,0 +1,40 @@
+// server.js
+
+// Import the mysql library
+const mysql = require('mysql');
+
+// Create a connection to the database
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'username',
+  password: 'password',
+  database: 'database_name'
+});
+
+// Connect to the database
+connection.connect(function(error) {
+  if (error) throw error;
+});
+
+// Set up the server
+const express = require('express');
+const app = express();
+
+// Parse incoming request bodies in a middleware before your handlers,
+// available under the req.body property.
+app.use(express.json());
+
+// Set up a route to handle the signup form submission
+app.post('/signup', function(req, res) {
+  // Insert the user data into the database
+  connection.query('INSERT INTO users SET ?', req.body, function(error, result) {
+    if (error) throw error;
+    // Send a response to the client
+    res.send({ success: true });
+  });
+});
+
+// Start the server
+app.listen(3000, function() {
+  console.log('Server listening on port 3000');
+});
