@@ -630,9 +630,7 @@ body {
 .footer .footer-link:is(:hover, :focus) {
     color: var(--white-1);
 }
-/* #about-us-3:is(:hover, :focus) {
-    color: var(--white-1);
-} */
+
 
 .newsletter-text {
     font-size: var(--fs-7);

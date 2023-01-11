@@ -8,11 +8,6 @@ document.getElementById("about-us-2").addEventListener("click", function () {
     window.scroll({ top: 2660, left: 0, behavior: 'smooth' });
 });
 
-// About us
-document.getElementById("footer-about-us").addEventListener("click", function () {
-    window.scroll({ top: 2660, left: 0, behavior: 'smooth' });
-});
-
 /* navbar toggle */
 
 const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
